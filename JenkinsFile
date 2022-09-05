@@ -1,3 +1,15 @@
-node{
-	echo "Hello"
+pipeline{
+	stages{
+		stage("Checkout"){
+			step{
+				git "https://github.com/faiz3ica/jenkins-learning-public.git"
+			}
+		}
+		stage("Run"){
+			step{
+				echo "Running code"
+			}
+		}
+
+	}
 }
