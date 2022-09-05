@@ -2,7 +2,7 @@ pipeline{
 	stages{
 		stage("Checkout"){
 			step{
-				git "https://github.com/faiz3ica/jenkins-learning-public.git"
+				echo "Checkout"
 			}
 		}
 		stage("Run"){
