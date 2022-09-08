@@ -25,22 +25,30 @@
         text-shadow: -2px -2px black, -2px -2px 10px yellow;
     }
     .menu{
-        float:right;
+        display: flex;
         width:50%;
         height:100%;
+        
     }
     .menu-item{
-        top:20px;
-        height:100%;
-        padding:40px;
+        text-align: center;
+        height:50%;
+        width:100px;
+        padding:30px 20px 20px 20px;
+        /* padding:20px; */
+        margin-left:20px;
+        vertical-align: bottom;
         color:red;
         font-size: 30px;
         text-decoration: none;
-        background-color: azure;
+        background-color: skyblue
     }
     .menu-item:hover{
-        background-color: hsla(0,0,0,.5);
+        background-color: rgba(35, 37, 37, 0.247);
         color:blue;
+    }
+    .for-active{
+        background-color: aquamarine;
     }
 </style>
 </head>
@@ -48,7 +56,7 @@
 <body>
     <div class="header">
         <div class="title">My Website</div>
-        <div class="menu"><a href="#" class="menu-item">Home</a><a href="#" class="menu-item">Blog</a><a href="#" class="menu-item">Contact</a><a href="#" class="menu-item">About</a></div>
+        <div class="menu"><a href="#" class="menu-item for-active">Home</a><a href="#" class="menu-item">Blog</a><a href="#" class="menu-item">Contact</a><a href="#" class="menu-item">About</a></div>
     </div>
 </body>
 </html>
